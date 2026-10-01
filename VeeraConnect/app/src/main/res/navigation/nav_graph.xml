@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment android:id="@+id/loginFragment"
+        android:name="com.techtitans.veeraconnect.ui.auth.LoginFragment"
+        android:label="@string/login">
+        <action android:id="@+id/action_login_to_register" app:destination="@id/registerFragment" />
+        <action android:id="@+id/action_login_to_home" app:destination="@id/itineraryFragment"
+            app:popUpTo="@id/nav_graph" app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment android:id="@+id/registerFragment"
+        android:name="com.techtitans.veeraconnect.ui.auth.RegisterFragment"
+        android:label="@string/register">
+        <action android:id="@+id/action_register_to_home" app:destination="@id/itineraryFragment"
+            app:popUpTo="@id/nav_graph" app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Placeholders: swap the class for the real fragment as each module is built -->
+    <fragment android:id="@+id/itineraryFragment"
+        android:name="com.techtitans.veeraconnect.ui.home.PlaceholderFragment"
+        android:label="@string/nav_itinerary" />
+    <fragment android:id="@+id/challengesFragment"
+        android:name="com.techtitans.veeraconnect.ui.home.PlaceholderFragment"
+        android:label="@string/nav_challenges" />
+    <fragment android:id="@+id/bookingFragment"
+        android:name="com.techtitans.veeraconnect.ui.home.PlaceholderFragment"
+        android:label="@string/nav_booking" />
+
+    <fragment android:id="@+id/profileFragment"
+        android:name="com.techtitans.veeraconnect.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile">
+        <action android:id="@+id/action_profile_to_login" app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph" app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

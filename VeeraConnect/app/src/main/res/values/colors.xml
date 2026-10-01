@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: replace with The Veera Era Ministry brand colours -->
+    <color name="brand_primary">#5B3A8C</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_secondary">#C9A227</color>
+    <color name="brand_on_secondary">#1B1B1B</color>
+    <color name="brand_background">#FBF8FF</color>
+    <color name="brand_surface">#FFFFFF</color>
+    <color name="brand_on_surface">#1B1B1F</color>
+    <color name="brand_error">#B3261E</color>
+</resources>
